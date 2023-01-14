@@ -443,7 +443,7 @@ text-align: center;
 
 
 .log-in{
-    background : url('../images/123993.jpg') no-repeat;
+    background : url('./images/123993.jpg') no-repeat;
     overflow-x: hidden;
 }
 .log-header{
@@ -522,7 +522,7 @@ height: 5%;
         color: white;
     }
     .checkout{
-        background : url('../images/123993.jpg') no-repeat;
+        background : url('./images/123993.jpg') no-repeat;
     overflow-x: hidden;
     }
 .upozorenje{
@@ -675,7 +675,7 @@ margin-bottom: 10px;
     text-align: left;
 color: rgb(225, 225, 225);
 margin-bottom: 30px;
-margin-top: 10px;
+margin-top: 30px;
 font-size: 32px;
 }
 .search-form{
@@ -695,6 +695,7 @@ border-radius: 5%;
 cursor: pointer;
 box-shadow: none;
 height: 20px;
+
     }
     .search-form-button{
         padding: 10px;
@@ -951,7 +952,7 @@ hr {
     font-family: 'Bangers', cursive;
     text-align: center;
 color: black;
-margin-top: 100px;
+margin-top: 130px;
 margin-bottom: 30px;
 font-size: 75px;
   }

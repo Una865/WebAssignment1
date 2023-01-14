@@ -12,52 +12,52 @@
   </head>
 
 <body>
-    <div class="loader_bg" style="display: none;">
+    <div class="loader_bg" >
         <div class="loader">
             <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" width="200px" height="200px">
         </div>
-    </div>    <header class="normal-header">
-                   <nav class="main-nav">
-                    <ul class="nav-list">
-                        <section class="nav-navigation">
-                              <li class="nav-item"><button class="nav-button" onclick="location.href='/users/managing';">Kontrolna tabla</button></li>
-                           <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='/users/profile';">Moj Profil</button></li>
-                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='/users/logout';">Odjavi se</button></li>
-            <li class="nav-item"><a href="/aboutus">About us</a></li>
-                                                </section>
-                       
-                          <div id="mobileid" class="mobil">
-                            <li id="mobile-bar"><div class="cross" onclick="menuBarClick(this)"><div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                                </div>
-                            </li>     
-                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
-    
-    <li class="mobile-nav-item" onclick="location.href = '/aboutus';">About us</li>
-                                <li class="mobile-nav-item" onclick="location.href='/users/managing';">Kontrol</li>
-                            <li class="mobile-nav-item" onclick="location.href = '/users/profile';">Moj Profil</li>
-                            <li class="mobile-nav-item" onclick="location.href='/users/logout';">Odjavi se</li>
-        
-                        
-                       </div>
-    
-                        
+    </div>     <header class="normal-header">
+        <nav class="main-nav">
+         <ul class="nav-list">
+             <section class="nav-navigation">
+                   <li class="nav-item"><button class="nav-button" onclick="location.href='/users/managing';">Control panel</button></li>
+                <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='/users/profile';">My profile</button></li>
+                 <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='/users/logout';">Logout</button></li>
+ <li class="nav-item"><a href="/aboutus">About us</a></li>
+                                     </section>
             
-                     
-                </ul>
-                </nav>
-            </header><section class="car">
+               <div id="mobileid" class="mobil">
+                 <li id="mobile-bar"><div class="cross" onclick="menuBarClick(this)"><div class="bar1"></div>
+                     <div class="bar2"></div>
+                     <div class="bar3"></div>
+                     </div>
+                 </li>     
+                 <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
+
+<li class="mobile-nav-item" onclick="location.href = '/aboutus';">About us</li>
+                     <li class="mobile-nav-item" onclick="location.href='/users/managing';">Control</li>
+                 <li class="mobile-nav-item" onclick="location.href = '/users/profile';">My profile</li>
+                 <li class="mobile-nav-item" onclick="location.href='/users/logout';">Logout</li>
+
+             
+            </div>
+
+             
+ 
+          
+     </ul>
+     </nav>
+ </header><section class="car">
         <h2 class="booking-h2">Audi R8</h2>
        
     <img src="https://www.b92.net/news/pics/2018/10/24/15280135055bd046465bcb6616558391_orig.jpg" width="400px" height="400px">
         <form class="booking-form" method="GET" action="/book-car">
             <input class="booking-form-input booking-date" type="date" name="from" value="2023-01-15">
             <input class="booking-form-input booking-date" type="date" name="to" value="2023-01-23">
-            <p> Lokacija: Novi Sad<br>Cena: $200 <br> Broj dana: 8<br> Ukupna cena: $1600</p>
+            <p> Location: Novi Sad <br>Cena: $200 <br> Number of days: 8<br> Total: $1600</p>
             <input type="hidden" value="5ecbe15556d8900004e4d33b" name="carid">
             <input type="hidden" value="200" name="carprice">
-            <button type="submit" class="booking-form-button">Plati</button>
+            <button type="submit" class="booking-form-button">Pay</button>
         </form>
     </section>
         <script src="app.js"></script>

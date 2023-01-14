@@ -20,8 +20,8 @@
                    <nav class="main-nav">
                     <ul class="nav-list">
                         <section class="nav-navigation">
-                             <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='/users/login';">Prijava</button></li>
-                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='/users/register';">Registracija</button></li>
+                             <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='login.html';">Login</button></li>
+                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='register.html';">Register</button></li>
             <li class="nav-item"><a href="/aboutus">About us</a></li>
                                                 </section>
                        
@@ -31,10 +31,10 @@
                                 <div class="bar3"></div>
                                 </div>
                             </li>     
-                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
+                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental Drive</a></h3></li>
                        <li class="mobile-nav-item" onclick="location.href = '/aboutus';">About us</li>
-                            <li class="mobile-nav-item" onclick="location.href = '/users/login';">Prijava</li>
-                            <li class="mobile-nav-item" onclick="location.href='/users/register';">Registracija</li>
+                            <li class="mobile-nav-item" onclick="location.href = 'login.html';">Login</li>
+                            <li class="mobile-nav-item" onclick="location.href='register.html';">Register</li>
         
                         
                        </div>
@@ -46,15 +46,15 @@
                 </nav>
             </header>  
             <section class="search">
-                <h2 class="search-h2">Izmenite pretragu</h2>
+                <h2 class="search-h2">Filter</h2>
                 <form class="search-form" method="GET" action="/search">
                        <input type="text" name="location" value="" class="search-form-input">
                     <input type="date" name="from" value="2023-01-15" class="search-form-input">
                     <input type="date" name="to" value="2023-01-22" class="search-form-input">
                     
-                    <input type="number" name="cenaod" class="search-form-input" placeholder="Cena od" value="">
-                    <input type="number" name="cenado" class="search-form-input" placeholder="Cena do" value="">
-                    <input type="text" name="marka" class="search-form-input" placeholder="Marka" value="">
+                    <input type="number" name="cenaod" class="search-form-input" placeholder="Price from" value="">
+                    <input type="number" name="cenado" class="search-form-input" placeholder="Price to" value="">
+                    <input type="text" name="marka" class="search-form-input" placeholder="Brand" value="">
                     <input type="number" name="people" class="search-form-input" placeholder="People" value="1">
                     <button class="search-form-button" type="submit"><span><i class="fas fa-search" aria-hidden="true"></i></span></button>
                 </form>
@@ -74,7 +74,7 @@
                     <input type="hidden" name="carprice" value="50">
                     <input type="hidden" name="carid" value="5ec7de4049068b1668af0b86">
                                 <img src="data:image/jpeg;base64,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" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -87,7 +87,7 @@
                     <input type="hidden" name="carprice" value="200">
                     <input type="hidden" name="carid" value="5ecbe15556d8900004e4d33b">
                                 <img src="https://www.b92.net/news/pics/2018/10/24/15280135055bd046465bcb6616558391_orig.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -100,7 +100,7 @@
                     <input type="hidden" name="carprice" value="350">
                     <input type="hidden" name="carid" value="5ecc2fd2168ab80004752fbd">
                                 <img src="https://www.autoexclusive.rs/storage/posts/gallery/2015/Dec/77834/vorsteiner-bmw-335i.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -113,7 +113,7 @@
                     <input type="hidden" name="carprice" value="250">
                     <input type="hidden" name="carid" value="5ecc302b168ab80004752fbe">
                                 <img src="https://i.pinimg.com/originals/09/b0/28/09b028e05d5b2f71f9be32be459b0cea.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -126,7 +126,7 @@
                     <input type="hidden" name="carprice" value="200">
                     <input type="hidden" name="carid" value="5ecc30f5168ab80004752fbf">
                                 <img src="https://media.fastestlaps.com/bmw-530d-g30.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -139,7 +139,7 @@
                     <input type="hidden" name="carprice" value="150">
                     <input type="hidden" name="carid" value="5ecc31ec168ab80004752fc0">
                                 <img src="https://i.ytimg.com/vi/D1cmKlQ5Ubk/maxresdefault.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -152,7 +152,7 @@
                     <input type="hidden" name="carprice" value="220">
                     <input type="hidden" name="carid" value="5ecc325c168ab80004752fc1">
                                 <img src="https://m.smedata.sk/api-media/media/image/sme/3/18/1866803/1866803_1200x.jpg?rev=1" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -165,7 +165,7 @@
                     <input type="hidden" name="carprice" value="250">
                     <input type="hidden" name="carid" value="5ecc32d8168ab80004752fc2">
                                 <img src="https://static.cargurus.com/images/site/2018/02/27/11/07/2018_volvo_xc90-pic-836858061422223765-1600x1200.jpeg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -178,7 +178,7 @@
                     <input type="hidden" name="carprice" value="180">
                     <input type="hidden" name="carid" value="5ecc334b168ab80004752fc3">
                                 <img src="https://www.b92.net/news/pics/2019/10/25/9088520105db2b24b903df835047655_orig.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -191,7 +191,7 @@
                     <input type="hidden" name="carprice" value="260">
                     <input type="hidden" name="carid" value="5ecc3383168ab80004752fc4">
                                 <img src="https://www.carscoops.com/wp-content/uploads/2020/02/2020-vw-touareg-r-phev-0-1024x555.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -204,7 +204,7 @@
                     <input type="hidden" name="carprice" value="120">
                     <input type="hidden" name="carid" value="5ecc3548168ab80004752fc5">
                                 <img src="https://practicalmotoring.com.au/wp-content/uploads/2019/11/ALL-NEW_CLIO_-__DEAN_SMITH-16619.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -217,7 +217,7 @@
                     <input type="hidden" name="carprice" value="230">
                     <input type="hidden" name="carid" value="5ecc36d1168ab80004752fc6">
                                 <img src="https://cdn.carbuzz.com/gallery-images/840x560/670000/100/670190.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -230,7 +230,7 @@
                     <input type="hidden" name="carprice" value="380">
                     <input type="hidden" name="carid" value="5ecc3898168ab80004752fc8">
                                 <img src="https://i.ytimg.com/vi/sfoB56jdWCs/maxresdefault.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -243,7 +243,7 @@
                     <input type="hidden" name="carprice" value="380">
                     <input type="hidden" name="carid" value="5ecd152082c30d0004676d7d">
                                 <img src="https://autorepublika.com/wp-content/uploads/2019/08/BMW-M3-F80-Competition.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -256,7 +256,7 @@
                     <input type="hidden" name="carprice" value="400">
                     <input type="hidden" name="carid" value="5ed0d9ff4df1030004be5759">
                                 <img src="https://drive-my.com/images/easyblog_articles/750/E30-1.jpg" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
+                <button class="booking-button" type="submit">Book</button>
                           </form>
                             </div> 
            <div class="car-div">
@@ -272,19 +272,7 @@
                 <button class="booking-button" type="submit">Bukiraj</button>
                           </form>
                             </div> 
-           <div class="car-div">
-                    <form method="GET" action="/car">
-                    <h5>BMW 530</h5> 
-                    <h5>400 per day</h5>
-                    <p>5 <i class="fas fa-user-friends" aria-hidden="true"></i> <i class="fas fa-fan" aria-hidden="true"></i></p>
-                    <input type="hidden" name="from" value="2023-01-15">
-                    <input type="hidden" name="to" value="2023-01-22">
-                    <input type="hidden" name="carprice" value="400">
-                    <input type="hidden" name="carid" value="600c716d803f0900040fa1d1">
-                                <img src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.autoexclusive.rs%2Fvesti%2Ftuning%2Fvorsteiner-bmw-335i&amp;psig=AOvVaw3oeRZ1Gl1bvT6Gef16QNqT&amp;ust=1590525604376000&amp;source=images&amp;cd=vfe&amp;ved=0CAIQjRxqFwoTCMDNrJfwz-kCFQAAAAAdAAAAABAD" width="100%" height="150px">
-                <button class="booking-button" type="submit">Bukiraj</button>
-                          </form>
-                            </div> 
+           
                    </section>
         <script src="app.js"></script>
       

@@ -15,39 +15,39 @@
     </div>
 </div>    <script src='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js'></script>
-    <header class="normal-header">
-                   <nav class="main-nav">
-                    <ul class="nav-list">
-                        <section class="nav-navigation">
-                             <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='public/register.html';">Prijava</button></li>
-                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='public/login.html';">Registracija</button></li>
-            <li class="nav-item"><a href="/aboutus">About us</a></li>
-                                                </section>
-                       
-                          <div id="mobileid" class="mobil">
-                            <li  id="mobile-bar"><div class="cross"  onclick="menuBarClick(this)"><div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                                </div>
-                            </li>     
-                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
-                       <li class="mobile-nav-item" onclick ="location.href = '/aboutus';">About us</li>
-                            <li class="mobile-nav-item" onclick = "location.href = '/users/login';">Prijava</li>
-                            <li class="mobile-nav-item" onclick="location.href='/users/register';">Registracija</li>
+<header class="normal-header">
+    <nav class="main-nav">
+     <ul class="nav-list">
+         <section class="nav-navigation">
+              <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='login.html';">Login</button></li>
+             <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='register.html';">Register</button></li>
+<li class="nav-item"><a href="/aboutus">About us</a></li>
+                                 </section>
         
-                        
-                       </div>
-    
-                        
-            
-                     
-                </ul>
-                </nav>
-            </header>    
+           <div id="mobileid" class="mobil">
+             <li id="mobile-bar"><div class="cross" onclick="menuBarClick(this)"><div class="bar1"></div>
+                 <div class="bar2"></div>
+                 <div class="bar3"></div>
+                 </div>
+             </li>     
+             <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental Drive</a></h3></li>
+        <li class="mobile-nav-item" onclick="location.href = '/aboutus';">About us</li>
+             <li class="mobile-nav-item" onclick="location.href = 'login.html';">Login</li>
+             <li class="mobile-nav-item" onclick="location.href='register.html';">Register</li>
+
+         
+        </div>
+
+         
+
+      
+ </ul>
+ </nav>
+</header>   
         <section class="booking">
-            <h2 class="booking-h2">Rentiraj automobil i uzivaj u voznji</h2>
+            <h2 class="booking-h2">Enjoy driving</h2>
             <form class="booking-form" method="GET"  action='/search'>
-               <input type="text" placeholder="Lokacija" class="booking-form-input" name="location">
+               <input type="text" placeholder="Location" class="booking-form-input" name="location">
                 <input type="date" name="from" id="from"  class="booking-form-input" required>
                 <input type="date" name="to" id="to" class="booking-form-input" required>
                 <input type="text" name="people" class="booking-form-input" placeholder="People">
@@ -58,13 +58,13 @@
             </form>
         </section>
         <section class="destination">
-            <h3 class="destination-h3">Istrazi lokalna mesta autom</h3>
+            <h3 class="destination-h3">Explore local places by car</h3>
             
 <div class="destination-div">
     <div class="destination-numbers">
-      <div class="destination-label" id="destination-label-1"><h6>Lokacije</h6> <h5 class="num">12</h5></div>
-      <div class="destination-label" id="destination-label-2"><h6>Vozila</h6> <h5 class="num">17</h5></div>
-      <div class="destination-label" id="destination-label-3"><h6>Bukiranja</h6> <h5 class="num">2</h5></div>
+      <div class="destination-label" id="destination-label-1"><h6>Location</h6> <h5 class="num">12</h5></div>
+      <div class="destination-label" id="destination-label-2"><h6>Vehicles</h6> <h5 class="num">17</h5></div>
+      <div class="destination-label" id="destination-label-3"><h6>Bookings</h6> <h5 class="num">2</h5></div>
         
     </div>
     <div class="destination-div-images">
@@ -75,10 +75,10 @@
 </div>
         </section>
         <section class="time">
-        <h3 class="time-h3">Pratimo dostignuca u automobilskoj industriji</h3>
+        <h3 class="time-h3">We are on track with the new technologies in car industry</h3>
     <div class="time-div">
         <div class="time-div-text">
-        <p>Uvek se trudimo da na raspolaganju imamo i najnovije automobile, ali isto tako volimo da pruzimo sansu i onim najstarijim</p>
+        <p>We always want to have the newest cars available to you but we also want to give a chance to older models.</p>
 </div>
 <div class="time-div-images">    
 <img class="time-div-img" src="images/преузимање.png" >
@@ -88,7 +88,7 @@
 </div>
         </section>
         <section class="kompanije">
-            <h3>Kompanije sa kojima saradjujemo</h3>
+            <h3>Companies we trust</h3>
             <div class="logo">
                 <img src="images/ford_logo.png">
                 <img src="images/Volkswagen_logo_2019.png">
@@ -108,10 +108,10 @@
                             </div>
         </section>
         <section class="policy">
-<h3>Nema potrebe za depozitom dovoljna su odgovarajuca dokumenta</h3>
+<h3>There is no need for deposit, an ID is fine</h3>
 <div class="policy-div">
 <span class="policy-div-icons"><i class="far fa-address-card"></i>  <i class="fas fa-plus"></i>  <i class="fas fa-scroll"></i> = <i class="fas fa-car"></i></span>
-<p id="policy-text">Ukoliko se nesto desi automobilu tokom voznje sve troskove ce snositi nasa i vasa osiguranja. Ukoliko bude bilo dodatnih troskova razmatra se krivac.</p>
+<p id="policy-text">If something happens insurance policies will take care of everything</p>
 <img class="policy-image" src="images/istockphoto-1166566396-1024x1024.jpg">
 </section>
 <footer>
@@ -128,7 +128,7 @@
     </ul>    
     </div>
 </div>
-    <div id="map-div"class="footer-section"><div class="footer-header"><h6>Lokacije</h6></div>
+    <div id="map-div"class="footer-section"><div class="footer-header"><h6>Locations</h6></div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.2569746847676!2d4.371001676347927!3d52.00219517443735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b58e7e597879%3A0x3d1e05e58c2c037c!2z0KLQtdGF0L3QuNGH0LrQuCDRg9C90LjQstC10YDQt9C40YLQtdGCINGDINCU0LXQu9GE0YLRgw!5e0!3m2!1ssr!2snl!4v1673700352983!5m2!1ssr!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </footer>
