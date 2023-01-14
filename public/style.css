@@ -54,8 +54,8 @@ top: 0;
 transition: 0.5s;  
 }
 .nav-header{
-font-size: 25px;
-font-family: normal;
+font-size: 30px;
+font-family: 'Bangers', cursive;
 
 }
 
@@ -105,6 +105,7 @@ nav  a{
 margin-top:5px;
 display:none;
 position: absolute;
+
 }
 .nav-navigation{
     float: right;
@@ -182,6 +183,7 @@ font-size: 75px;
 .booking-form-input{
     padding: 10px;
     margin-bottom: 10px;
+    height: 20px;
     }
     .booking-form-button{
         padding: 10px;
@@ -192,6 +194,8 @@ color: rgba(0, 0, 0, 0.753);
 border-radius: 5%;
 cursor: pointer;
 box-shadow: none;
+height: 44px;
+width: 44px;
     }
 .destination{
     padding: 60px;
@@ -291,7 +295,7 @@ text-align: center;
     color: white;
 font-family: 'Bangers', cursive;
 padding: 120px;
-padding-bottom: 0;
+padding-bottom: 100px;
 }
 .policy-div{
  
@@ -345,14 +349,20 @@ text-decoration:
 }
 footer ul{
     list-style: none;
+    
+}
+.footer-links {
+    padding-top: 30px;
+    margin: auto;
 }
 .footer-link{
     text-decoration: none;
-font-size: 45px;
+font-size: 35px;
 cursor: pointer;
-display: block;
-width: 50px;
+display: inline;
+width: 30px;
 text-align: center;
+padding: 20px;
 
 }
 #map-div{
@@ -665,11 +675,13 @@ margin-bottom: 10px;
     text-align: left;
 color: rgb(225, 225, 225);
 margin-bottom: 30px;
-font-size: 35px;
+margin-top: 10px;
+font-size: 32px;
 }
 .search-form{
   display: block;
   text-align: left;
+  justify-content: center;
 
 }
 .search-form-input{
@@ -682,6 +694,7 @@ color: rgba(0, 0, 0, 0.753);
 border-radius: 5%;
 cursor: pointer;
 box-shadow: none;
+height: 20px;
     }
     .search-form-button{
         padding: 10px;
@@ -696,6 +709,12 @@ box-shadow: none;
     .fa-arrow-left{
         display: none;
     }
+.google-directions{
+    display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  
+}
 .car-div{
     
     font-family: 'Bangers', cursive;
