@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+   
+  </head>
+
+<body>
+    <div class="loader_bg">
+        <div class="loader">
+            <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" height="200px" width="200px">
+        </div>
+    </div>    <header class="normal-header">
+                   <nav class="main-nav">
+                    <ul class="nav-list">
+                        <section class="nav-navigation">
+                              <li class="nav-item"><button class="nav-button" onclick="location.href='/users/managing';">Kontrolna tabla</button></li>
+                           <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='/users/profile';">Moj Profil</button></li>
+                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='/users/logout';">Odjavi se</button></li>
+            <li class="nav-item"><a href="/aboutus">About us</a></li>
+                                                </section>
+                       
+                          <div id="mobileid" class="mobil">
+                            <li id="mobile-bar"><div class="cross" onclick="menuBarClick(this)"><div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                                </div>
+                            </li>     
+                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
+    
+    <li class="mobile-nav-item" onclick="location.href = '/aboutus';">About us</li>
+                                <li class="mobile-nav-item" onclick="location.href='/users/managing';">Kontrol</li>
+                            <li class="mobile-nav-item" onclick="location.href = '/users/profile';">Moj Profil</li>
+                            <li class="mobile-nav-item" onclick="location.href='/users/logout';">Odjavi se</li>
+        
+                        
+                       </div>
+    
+                        
+            
+                     
+                </ul>
+                </nav>
+            </header><section class="control-section">
+        <h2>Kontrolna tabla</h2>
+        <div class="control-navigation">
+            <ul class="ctrl-navigation-list">
+                <li class="ctrl-navigation-list-item" id="booking-button">Bukiranja</li>
+                <li class="ctrl-navigation-list-item" id="car-button">Automobili</li>
+                <li class="ctrl-navigation-list-item active" id="location-button">Lokacije</li>
+            </ul>
+        </div>
+    
+    
+        <div class="control-div">
+            <div class="control-sub-navigation">
+                <ul class="ctrl-sub-navigation-list">
+                    <li class="ctrl-sub-navigation-item" id="add-car" style="display: none;">Dodaj Automobil</li>
+                    <li class="ctrl-sub-navigation-item" id="other-cars" style="display: none;">Ostali Automobili</li>
+                    <li class="ctrl-sub-navigation-item active" id="add-location" style="display: inline-block;">Dodaj Lokaciju</li>
+                    <li class="ctrl-sub-navigation-item" id="other-locations" style="display: inline-block;">Ostale Lokacije</li>
+                </ul>
+            </div>
+            <h4 class="control-div-header">Dodaj lokaciju</h4>
+    
+            <form class="control-form" method="POST" action="/users/managing/post-locations" id="dodaj-lokaciju">
+                <input type="text" class="control-form-input" name="grad" id="first" placeholder="Grad">
+                <input type="text" class="control-form-input" name="zemlja" id="second" placeholder="Zemlja">
+                <select id="motori" name="motori" style="display: none;">
+                    Svi motori
+                    <option value="dizel">Dizel</option>
+                    <option value="benzin">Benzin</option>
+                    <option value="elektricni">Elektricni</option>
+                </select>
+                <input type="number" class="control-form-input" name="sedista" id="third" placeholder="Sedista" min="1" max="10" style="display: none;">
+                <label name="klima" display="none" style="display: none;">Klima: </label>
+                <input name="klima" value="true" checked="" type="checkbox" display="none" id="klima" style="display: none;">
+                <input type="number" class="control-form-input" name="cena" id="fourth" placeholder="Cena" style="display: none;">
+                <input type="text" class="control-form-input" name="img" id="fifth" placeholder="URL Adresa slike" style="display: none;">
+                <input type="text" name="lokacija" class="control-form-input" id="location-input" placeholder="Loaction" style="display: none;">
+                            <button type="submit" class="control-form-button"><span><i class="fas fa-plus" aria-hidden="true"></i></span></button>
+            </form>
+        </div>
+    </section>
+       <section class="search-cars">
+    
+         
+    
+                
+        
+    </section>    
+    
+    <div id="id01" class="modal">
+            <form class="modal-content" action="/users/managing/delete-car" method="POST">
+                <div class="container">
+                    <h1 class="container-header">Zelite li da izbrisete auto</h1>
+                    <p class="confirm-text"></p>
+                    <p class="zahtev">Unesite marku i model automobila</p>
+                    <input type="hidden" class="input-item-id" name="itemid">
+                    <input type="text" class="input-confirm">
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button-window cancelbtn">Cancel</button>
+                        <button type="button" class="button-window deletebtn">Izbrisi</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src='app.js'></script>
+      
+    </body>
+    </html>

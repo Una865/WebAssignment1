@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+   
+  </head>
+
+<body class="log-in">
+    <div class="loader_bg" style="display: none;">
+        <div class="loader">
+            <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" width="200px" height="200px">
+        </div>
+    </div>    
+          
+           <header class="log-header"><h2><a href="/">Car Rental</a></h2></header>
+                          
+             <div class="log">
+        <h2 class="register-h2">Registracija</h2>
+        <form class="login-form" action="/users/register" method="POST">
+        <input type="text" id="username" name="username" class="login-form-input" placeholder="Username">
+    <input type="email" id="email" name="email" class="login-form-input" placeholder="Email">
+    <input type="password" id="password" name="password" class="login-form-input" placeholder="Password">
+    <input type="password" id="confirm" name="confirm" class="login-form-input" placeholder="Confirm password">
+    <input type="hidden" name="_csrf" value="nOvtO1zK-QwXo4uGAgFtg10ZW7OJXskdIv8E">
+    <button class="login-form-button" type="submit">Registruj se</button>
+    </form>
+    <p class="login-tekst">Imate nalog? <a href="/users/login">Prijavite se</a></p>
+    
+             </div>
+          
+        <script src="app.js"></script>
+      
+    </body>
+    </html>

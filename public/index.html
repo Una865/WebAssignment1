@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+   
+  </head>
+  <body>
+<div class = "loader_bg">
+    <div class="loader">
+        <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" height="200px" width="200px">
+    </div>
+</div>    <script src='https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js'></script>
+    <header class="normal-header">
+                   <nav class="main-nav">
+                    <ul class="nav-list">
+                        <section class="nav-navigation">
+                             <li class="nav-item"><button class="nav-button" id="log-in" onclick="location.href='/users/login';">Prijava</button></li>
+                            <li class="nav-item"><button class="nav-button" id="register" onclick="location.href='/users/register';">Registracija</button></li>
+            <li class="nav-item"><a href="/aboutus">About us</a></li>
+                                                </section>
+                       
+                          <div id="mobileid" class="mobil">
+                            <li  id="mobile-bar"><div class="cross"  onclick="menuBarClick(this)"><div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                                </div>
+                            </li>     
+                            <li class="nav-header"><h3 class="nav-header"><a href="/">Car Rental</a></h3></li>
+                       <li class="mobile-nav-item" onclick ="location.href = '/aboutus';">About us</li>
+                            <li class="mobile-nav-item" onclick = "location.href = '/users/login';">Prijava</li>
+                            <li class="mobile-nav-item" onclick="location.href='/users/register';">Registracija</li>
+        
+                        
+                       </div>
+    
+                        
+            
+                     
+                </ul>
+                </nav>
+            </header>    
+        <section class="booking">
+            <h2 class="booking-h2">Rentiraj automobil i uzivaj u voznji</h2>
+            <form class="booking-form" method="GET"  action='/search'>
+               <input type="text" placeholder="Lokacija" class="booking-form-input" name="location">
+                <input type="date" name="from" id="from"  class="booking-form-input" required>
+                <input type="date" name="to" id="to" class="booking-form-input" required>
+                <input type="text" name="people" class="booking-form-input" placeholder="People">
+                <input type="hidden" name="marka">
+                <input type="hidden" name="cenaod">
+                <input type="hidden" name="cenado">
+                <button class="booking-form-button" type="submit"><span><i class="fas fa-search"></i></span></button>
+            </form>
+        </section>
+        <section class="destination">
+            <h3 class="destination-h3">Istrazi lokalna mesta autom</h3>
+            
+<div class="destination-div">
+    <div class="destination-numbers">
+      <div class="destination-label" id="destination-label-1"><h6>Lokacije</h6> <h5 class="num">12</h5></div>
+      <div class="destination-label" id="destination-label-2"><h6>Vozila</h6> <h5 class="num">17</h5></div>
+      <div class="destination-label" id="destination-label-3"><h6>Bukiranja</h6> <h5 class="num">2</h5></div>
+        
+    </div>
+    <div class="destination-div-images">
+    <img id="destination-img-1" src="images/AO9T8809.jpg">
+    <img id="destination-img-2"src="images/KlMcaRKsge.jpg">
+    <img id="destination-img-3"src="images/Should-I-Rent-a-Car-or-use-Taxi.jpeg">
+</div>
+</div>
+        </section>
+        <section class="time">
+        <h3 class="time-h3">Pratimo dostignuca u automobilskoj industriji</h3>
+    <div class="time-div">
+        <div class="time-div-text">
+        <p>Uvek se trudimo da na raspolaganju imamo i najnovije automobile, ali isto tako volimo da pruzimo sansu i onim najstarijim</p>
+</div>
+<div class="time-div-images">    
+<img class="time-div-img" src="images/преузимање.png" >
+<img class="time-div-img" src="images/right-arrow.png">
+<img class="time-div-img" src="images/bugatti-la-voiture-noire.jpg" >
+</div>       
+</div>
+        </section>
+        <section class="kompanije">
+            <h3>Kompanije sa kojima saradjujemo</h3>
+            <div class="logo">
+                <img src="images/ford_logo.png">
+                <img src="images/Volkswagen_logo_2019.png">
+                <img src="images/volvo-logo.jpg">
+                <img src="images/Alfa-Romeo-logo.png">
+                <img src="images/bmw_logo.jpg">
+                <img src="images/Chevrolet-logo-2004-1920x1080.jpg">
+                <img src="images/fiat.jpg">
+               <img src="images/hyundai.jpg">
+                <img src="images/Peugeot_logo.svg.png">
+                <img src="images/Toyota-logo.jpg">
+                <img src="images/skoda.png">
+                <img src="images/renault_2015_vertical.png">
+                <img src="images/KIA_motors.png">
+                <img src="images/jaguar-logo-DFCA354A04-seeklogo.com.png">
+                <img src="images/Citroen-logo-300x225.png">
+                            </div>
+        </section>
+        <section class="policy">
+<h3>Nema potrebe za depozitom dovoljna su odgovarajuca dokumenta</h3>
+<div class="policy-div">
+<span class="policy-div-icons"><i class="far fa-address-card"></i>  <i class="fas fa-plus"></i>  <i class="fas fa-scroll"></i> = <i class="fas fa-car"></i></span>
+<p id="policy-text">Ukoliko se nesto desi automobilu tokom voznje sve troskove ce snositi nasa i vasa osiguranja. Ukoliko bude bilo dodatnih troskova razmatra se krivac.</p>
+<img class="policy-image" src="images/istockphoto-1166566396-1024x1024.jpg">
+</section>
+<footer>
+    <div class="footer-section">
+    <div class="footer-div">
+  <div class="footer-header"><h6>Car Rental<h6></div>
+<p>Kompanija osnovana u Novom Sadu</p>
+    </div>
+    <div class="footer-div" id="links">
+    <div class="footer-header"><h6>Posetite nas</h6></div>
+        <ul class="footer-links">
+<li class="footer-link"><i  class="fab fa-facebook-f"></i></li>
+<li class="footer-link"><i class="fab fa-instagram"></i></li>
+<li class="footer-link"><i class="fab fa-linkedin-in"></i></li>
+    </ul>    
+    </div>
+</div>
+    <div id="map-div"class="footer-section"><div class="footer-header"><h6>Lokacije</h6></div>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1Vlcd0Utav-XE1WDTN5oWMht2bvpXUFX8" class="map"></iframe>
+    </div>
+</footer>
+
+<script type="text/javascript">
+$('.num').counterUp({delay:10, time:1000})
+</script>
+    <script src='app.js'></script>
+  </body>
+</html>

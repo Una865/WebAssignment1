@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/e9b049ff8c.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+   
+  </head>
+
+<body class="log-in">
+    <div class="loader_bg">
+        <div class="loader">
+            <img src="https://media2.giphy.com/media/ZApioYCl0ic46pcHRp/source.gif" width="200px" height="200px">
+        </div>
+    </div>    
+              
+             <header class="log-header"><h2><a href="/">Car Rental</a></h2></header>
+                          
+             <div class="log">
+        <h2 class="login-h2">Prijava</h2>
+        <form id="booking-form" class="login-form" action="/users/login" method="POST">
+    <input type="email" id="email" name="email" class="login-form-input" placeholder="Email">
+    <input type="password" class="login-form-input" id="password" name="password" placeholder="Password">
+    <input type="hidden" name="_csrf" value="o86VzGFU-wE5f62CZ0CAjEJK4-9-LdbwLcOM">
+    <button class="login-form-button" type="submit">Prijavi se</button>
+    </form>
+    <p class="login-tekst">Nemate nalog? <a href="/users/register">Registruj se</a></p>
+             </div>
+             
+        <script src="app.js"></script>
+      
+    </body>
+    </html>
