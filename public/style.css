@@ -185,6 +185,11 @@ font-size: 75px;
     margin-bottom: 10px;
     height: 20px;
     }
+
+.booking-form-input-people{
+    width: 60px;
+    height:40px;
+}
     .booking-form-button{
         padding: 10px;
         text-decoration: none;

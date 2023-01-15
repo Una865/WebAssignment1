@@ -47,10 +47,11 @@
         <section class="booking">
             <h2 class="booking-h2">Enjoy driving</h2>
             <form class="booking-form" method="GET"  action='/search'>
-               <input type="text" placeholder="Location" class="booking-form-input" name="location">
+               <input type="text" placeholder="Start-location" class="booking-form-input" name="location-start">
                 <input type="date" name="from" id="from"  class="booking-form-input" required>
+                <input type="text" placeholder="End-location" class="booking-form-input" name="location-end">
                 <input type="date" name="to" id="to" class="booking-form-input" required>
-                <input type="text" name="people" class="booking-form-input" placeholder="People">
+                <input type="text" name="people" class="booking-form-input-people" placeholder="People">
                 <input type="hidden" name="marka">
                 <input type="hidden" name="cenaod">
                 <input type="hidden" name="cenado">
